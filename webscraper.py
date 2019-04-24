@@ -13,5 +13,7 @@ for play in content.findAll('div', attrs={"id": "gp-quarter-1"}):
         "gameDetails": play.find('td', attrs={"class": "game-details"}).text.encode('utf-8'),
         "combinedScore": play.find('td', attrs={"class": "combined-score"}).text.encode('utf-8'),
     }
-    print playObject
+    playArray.append(playObject)
+with open('playData.json', 'w') as outfile:
+    json.dump(playArray, outfile)
     
