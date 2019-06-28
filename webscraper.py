@@ -27,7 +27,7 @@ for quarter in quarters:
         with open('playData.json', 'w') as outfile:
             json.dump(playArray, outfile)
 
-# Got all players names
+# Lines 32-47 grabs all the players names 
 
 urlPlayers = "http://www.espn.com/nba/boxscore?gameId=401126819&wsVar=us~nba~gamepackage,desktop,en"
 responsePlayers = requests.get(urlPlayers, timeout=5)
