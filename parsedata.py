@@ -7,8 +7,8 @@ with open('playerData.json') as json_data:
     for i in range(0,5):
     	homeStarters.append(jsonData[i])
     print homeStarters
-
     awayStarters=[]
     for i in range(15,20):
     	awayStarters.append(jsonData[i])
     print awayStarters
+
